@@ -10,8 +10,7 @@ services:
             - /tmp/.X11-unix/:/tmp/.X11-unix/:rw
             - $XDG_RUNTIME_DIR/pulse/native:$XDG_RUNTIME_DIR/pulse/native:rw
             - /dev/shm:/dev/shm:rw
-              #- /etc/machine-id:/etc/machine-id:ro
             - $HOME/.config/netease-cloud-music:/home/music/.config/netease-cloud-music:rw
-            - $HOME/Music:/home/Music:ro
-            - $HOME/Music/CloudMusic:/home/Music/CloudMusic:rw
+            - $HOME/Music:/home/music/Music:ro
+            - $HOME/Music/CloudMusic:/home/music/Music/CloudMusic:rw
         user: "${UID}"
