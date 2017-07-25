@@ -11,7 +11,11 @@ services:
             - /tmp/.X11-unix/:/tmp/.X11-unix/:rw
             - $XDG_RUNTIME_DIR/pulse/native:$XDG_RUNTIME_DIR/pulse/native:rw
             - /dev/shm:/dev/shm:rw
-            - $HOME/.config/netease-cloud-music:/home/music/.config/netease-cloud-music:rw
+            - netease-cloud-music-config:/home/music/.config/netease-cloud-music:rw
+            - netease-cloud-music-cache:/home/music/.cache/netease-cloud-music:rw
             - $HOME/Music:/home/music/Music:ro
             - $HOME/Music/CloudMusic:/home/music/Music/CloudMusic:rw
         user: "${UID}"
+volumes:
+    netease-cloud-music-config:
+    netease-cloud-music-cache:

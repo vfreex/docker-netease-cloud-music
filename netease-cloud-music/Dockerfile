@@ -25,3 +25,7 @@ CMD ["/usr/bin/netease-cloud-music", "--no-sandbox"]
 USER 1000
 ENV LANG=zh_CN.UTF-8
 
+RUN \
+    mkdir -p /home/music/.cache/netease-cloud-music /home/music/.config/netease-cloud-music /home/music/Music/CloudMusic && \
+    chgrp -hR 0 /home/music/.cache/netease-cloud-music /home/music/.config/netease-cloud-music /home/music/Music/CloudMusic && \
+    chmod g+rwX /home/music/.cache/netease-cloud-music /home/music/.config/netease-cloud-music /home/music/Music/CloudMusic
