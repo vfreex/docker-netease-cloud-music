@@ -2,7 +2,7 @@
 
 Docker image of Netease Cloud Music (网易云音乐) for Linux.
 
-Netease Cloud Music (网易云音乐) is one of the most popular music player in China.
+Netease Cloud Music (网易云音乐) is one of the most popular music players in China.
 
 ## Background
 
@@ -23,7 +23,7 @@ users like me don't want to run it directly on host for safety reasons.
 2. SELinux should be disabled if you are using Fedora/RHEL/CentOS:
 
 ``` bash
-setenforce 0
+sudo setenforce 0
 ```
 
 3. Access to X server from local should be granted:

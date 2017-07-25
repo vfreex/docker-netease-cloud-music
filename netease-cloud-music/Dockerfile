@@ -23,4 +23,5 @@ COPY files/ /
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["/usr/bin/netease-cloud-music", "--no-sandbox"]
 USER 1000
+ENV LANG=zh_CN.UTF-8
 
