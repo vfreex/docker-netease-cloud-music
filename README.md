@@ -32,6 +32,14 @@ sudo setenforce 0
 xhost +local:
 ```
 
+4. Make sure your music library is accessible by the root group
+(the music player inside the container will be run under the root group):
+
+``` bash
+mkdir -p $HOME/Music && chgrp -hR 0 $HOME/Music && chmod -R g=rX $HOME/Music
+mkdir -p $HOME/Music/CloudMusic && chgrp -hR 0 $HOME/Music/CloudMusic && chmod -R g=rwX $HOME/Music/CloudMusic
+```
+
 ## Usage
 
 - Pull the image from Docker Hub:
