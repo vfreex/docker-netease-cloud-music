@@ -20,19 +20,7 @@ users like me don't want to run it directly on host for safety reasons.
 - [Docker 1.12+](https://docs.docker.com/engine/installation/)
 - [Docker Compose 1.10+](https://docs.docker.com/compose/install/)
 
-2. SELinux should be disabled if you are using Fedora/RHEL/CentOS:
-
-``` bash
-sudo setenforce 0
-```
-
-3. Access to X server from local should be granted:
-
-``` bash
-xhost +local:
-```
-
-4. Make sure your music library is accessible by the root group
+2. Make sure your music library is accessible by the root group
 (the music player inside the container will be run under the root group):
 
 ``` bash
