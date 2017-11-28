@@ -5,7 +5,7 @@ LABEL name=netease-cloud-music \
     release=2 \
     maintainer='Yuxiang Zhu <vfreex@gmail.com>'
 
-ARG NETEASE_CLOUD_MUSIC_URL=http://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_amd64_ubuntu16.04.deb
+ARG NETEASE_CLOUD_MUSIC_URL=http://d1.music.126.net/dmusic/netease-cloud-music_1.1.0_amd64_ubuntu.deb
 
 RUN \
     apt-get update && \
